@@ -1,13 +1,13 @@
 /*
  * Author: Francois Vogel
- * Comment: Point Update Range Query Segtree
+ * Comment: Range Update Point Query Segtree
 */
 
-const int p2 = 1<<20; // define your bounds here
+const int p2 = 1<<-1; // define your bounds here
 
 struct Segtree {
     Segtree() {
-        t = new unsigned short [p2*2];
+        t = new int [p2*2];
         for (int i = 0; i < p2*2; i++) t[i] = 0;
     }
     void upd(int b, int e, int v) {
@@ -23,5 +23,5 @@ struct Segtree {
         for (x += p2; x; x /= 2) r += t[x];
         return r;
     }
-    unsigned short* t;
+    int* t;
 };
