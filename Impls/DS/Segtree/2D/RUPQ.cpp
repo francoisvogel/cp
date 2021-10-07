@@ -1,13 +1,13 @@
 /*
  * Author: Francois Vogel
- * Comment: Point Update Range Query 2D Segment Tree (O(n^2log^2n) space complexity)
+ * Comment: Range Update Point Query 2D Segment Tree (O(n^2log^2n) time complexity, O(n^2) space complexity)
 */
 
 /* Practice problems:
  * Codeforces (2400) - The Unintended Antiquity - https://codeforces.com/problemset/problem/869/E (A good problem to test your first implementation on)
 */
 
-const int p2 = 1<<12; // bounds here
+const int p2 = 1<<-1; // bounds here
 
 struct Segtree1D {
     Segtree1D() {
