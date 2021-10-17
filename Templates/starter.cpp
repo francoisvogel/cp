@@ -12,7 +12,7 @@ using namespace __gnu_pbds;
 
 #define vi vector<int>
 #define all(x) x.begin(), x.end()
-#define size(x) (int)(x.size())
+#define size(x) (int)((x).size())
 #define pb push_back
 #define ins insert
 #define cls clear
